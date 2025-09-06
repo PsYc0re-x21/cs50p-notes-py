@@ -6,6 +6,6 @@ def main():
     if num>=21:
         print("You are old enough")
     else:
-        print("Nope!")
+        print("Grow up kiddo!")
         
 main()
