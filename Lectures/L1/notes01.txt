@@ -1,0 +1,4 @@
+---Level0----
+name = input("Please enter your name: ")
+print("Hello " +/, name) #we can either use plus or just comma
+
