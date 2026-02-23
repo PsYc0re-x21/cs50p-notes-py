@@ -2,3 +2,117 @@
 name = input("Please enter your name: ")
 print("Hello " +/, name) #we can either use plus or just comma
 
+#  How to add on the same line?
+
+name = input("Please enter your name: ")
+print("Hello ", end= "")
+print(name)
+
+!We can use single or double quote for str btw!
+
+#---Level01---#
+
+name = input("Please enter your name: ")
+print(f"Hello," {name})
+
+#How to fix "Space" messes, capitalize?
+
+ 
+name = input("Please enter your name: ")
+name= name.strip() --> Fixes white spaces on left and right
+name= name.capitalize() --> Does capitalize after the first word:(
+name= name.title()    
+
+print(f"Hello, {name}")
+
+!We can do all these together in one line!
+
+name = input("Please enter your name: ").strip().title()
+print(f"Hello, {name}")
+
+#Spliting names
+
+name = input("Please enter your name: ").strip().title()
+first, last = name.split()
+
+print(f"Hello, {first}")
+
+#---Level02---#
+Calculator
+By default all the inputs are strings. So we gotta specify
+
+x= int(input("Input X= "))
+y= int(input("Input Y= "))
+
+z= int(x) + int(y) --> not necessary, since we already declared *int*
+print(z)--> instead of this, we can write:
+print(x+y)
+
+###Float###
+
+x= float(input("Input X= "))
+y= float(input("Input Y= "))
+
+print(round(x+y)) --> it rounds up to nearest integer 
+
+!We can specify the number of decimal points!
+
+x= float(input("Input X= "))
+y= float(input("Input Y= "))
+
+print(round(x/y, 2))
+
+#---Level03: Defining function---#
+
+def hello():
+    print("Hello,")
+
+name= input("Enter your name")
+hello()
+print(name)
+
+
+!Other approach!
+
+def hello(to= "world"):
+    print("Hello,", to)
+
+name= input("Enter your name")
+hello(name)
+
+-->What happens?
+Python looks at the function def hello(to="world").
+You passed "Joy".
+Python says: "Okay, the user provided a value. I will throw away 'world' and put "Joy" into the variable to."
+
+The function runs: print("Hello,", "Joy").
+Result: Hello, Joy
+
+!!Actual approach!!
+
+def main():
+    name= input("Enter your name")
+    hello (name)
+
+def main(to= "world")
+    print("Hello," to) 
+
+main()
+
+
+### Defining + calcualtor ###
+
+def main():
+    x= int(input(Enter X))
+    print("X square is: ", square (x))
+
+def square(n):
+    return n*n
+
+main()
+
+
+
+
+
+
