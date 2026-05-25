@@ -51,7 +51,12 @@ print(x+y)
 ###Float###
 
 x= float(input("Input X= "))
-y= float(input("Input Y= "))
+y= float(input("Inpu
+
+def hello():
+    print("Hello,")
+
+name= input("Enter your name")t Y= "))
 
 print(round(x+y)) --> it rounds up to nearest integer 
 
@@ -63,11 +68,6 @@ y= float(input("Input Y= "))
 print(round(x/y, 2))
 
 #---Level03: Defining function---#
-
-def hello():
-    print("Hello,")
-
-name= input("Enter your name")
 hello()
 print(name)
 
