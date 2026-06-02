@@ -86,7 +86,7 @@ You passed "Joy".
 Python says: "Okay, the user provided a value. I will throw away 'world' and put "Joy" into the variable to."
 
 The function runs: print("Hello,", "Joy").
-Result: Hello, Joy
+Res `ult: Hello, Joy
 
 !!Actual approach!!
 
